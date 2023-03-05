@@ -1,0 +1,27 @@
+Problem Statement
+You are given an integer A and a floating point number B, upto exactly two decimal places. Compute their product, truncate its fractional part, and print the result as an integer.
+Input
+Since this will be a functional problem, you don't have to take input. You just have to complete the function solve() that takes an integer and a float as arguments.
+
+Constraints
+0<=A<=2 x 1015
+0<=Bi<=10
+Output
+Return the product after truncating the fractional part.
+Example
+Sample Input:
+155
+2.41
+
+Sample Output:
+373
+
+The result is 373.55, after truncating the fractional part, we get 373.
+
+class Solution {
+    long solve(long a, double b) {
+        b= (b*100);
+
+        return (a*(long)b)/100;
+    }
+}
