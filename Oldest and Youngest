@@ -1,0 +1,52 @@
+Problem Statement
+Given three distinct numbers a, b and c which denotes the age of three person 1, 2, 3.
+Output the youngest and oldest person among three.
+Input
+Three integers are given as input. a, b, and c denotes the age of person 1, 2, 3 respectively.
+
+Constraints
+1 ≤ a ≤ 105
+1 ≤ b ≤ 105
+1 ≤ c ≤ 105
+Output
+Print the youngest and the oldest person number respectivley.
+Example
+Sample Input:
+12 11 7
+
+Sample Output:
+3 1
+
+Explanation:
+7 is the least among all three so 3 has the least age and similarly, 12 is the maximum among three so 1 is the oldest.
+
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static void main (String[] args) {
+        // Your code here
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int small,g;
+        if(a>b && a>c){
+            g=1;
+        }else if(b>a && b>c){
+            g=2;
+        }else{
+           g=3;
+        }
+        if (a<b && a<c){
+            small=1;
+        }else if(b<a && b<c){
+            small=2;
+        }else{
+            small=3;
+        }
+        System.out.print(small+" "+g);
+    }
+}
