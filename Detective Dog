@@ -1,0 +1,43 @@
+Problem Statement
+Ram has a military dog who has the special ability of hearing, He can hear frequencies starting from 70Hz to 44000Hz (both inclusive). Now Ram wants to detect some unusual sounds across him. Tell "Yes" or "No" whether his dog can detect the sound or not.
+Input
+First line of the input contains the value of Test cases T.
+Each test case consists of a single integer X - the frequency of unusual sound in Hertz.
+
+Constraints
+1 ≤ T ≤ 104
+1 ≤ X ≤ 105
+Output
+Print Yes or No wether his dog can detect them or not for each test case.
+Example
+Sample Input
+3
+21
+453
+45000
+
+Sample Output
+No
+Yes
+No
+
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static void main (String[] args) {
+        // Your code here
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        for (int i=1; i<=x; i++){
+            int num=sc.nextInt();
+            if (num>=70 && num<=44000){
+                System.out.println("Yes");
+            }else{
+                System.out.println("No");
+            }
+        }
+    }
+}
