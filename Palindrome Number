@@ -1,0 +1,35 @@
+Problem Statement
+Given a number N, you need to check whether the given number is Palindrome or not. A number is said to be Palindrome when it reads the same from backward as forward.
+Input
+User task:
+Since this is a functional problem you don't have to worry about the input. You just have to complete the function isPalindrome() which contains N as a parameter.
+
+Constraints:
+1 <= N <= 9999
+Output
+You need to return "True" is the number is palindrome otherwise "False".
+Example
+Sample Input:
+5
+
+Sample Output:
+True
+
+Sample Input:
+121
+
+Sample Output:
+True
+
+static void isPalindrome(int N)
+	{
+	   int r, sum=0, temp;
+	   temp=N;
+	   while(temp!=0){
+		   r=temp%10; //getting remainder
+		   sum=(sum*10)+r;
+		   temp=temp/10;
+	   }
+	   String p = N==sum ? "True":"False";
+	   System.out.print(p);
+	}
