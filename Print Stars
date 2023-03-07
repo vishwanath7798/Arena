@@ -1,0 +1,43 @@
+Problem Statement
+Write a program to print Five stars ('*') vertically and 5 horizontally
+
+There will be two functions:
+
+verticalFive(): Print stars in vertical order
+
+horizontalFive(): Print stars in horizontal order
+Input
+User Task:
+Your task is to complete the functions verticalFive() and horizontalFive().
+
+Output
+Print 5 vertical stars in verticalFive and 5 horizontal stars(separated by whitespace) in horizontalFive function.
+
+Note: You don't need to print the extra blank line it will be printed by the driver code
+Example
+No Sample Input:
+
+Sample Output:
+*
+*
+*
+*
+*
+
+* * * * *
+
+static void verticalFive(){
+//Enter your code here
+    int n=5;
+    for (int i=1; i<=n; i++){
+        System.out.println("*");
+    }
+}
+
+static void horizontalFive(){
+//Enter your code here
+    int n=5;
+    for (int i=1; i<=n; i++){
+        System.out.print("* ");
+    } 
+}
